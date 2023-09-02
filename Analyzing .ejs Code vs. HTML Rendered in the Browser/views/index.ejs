@@ -1,0 +1,36 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJS Example</title>
+</head>
+<body>
+    <h1>Welcome to <%= message %></h1>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJS Enhanced Example</title>
+</head>
+<body>
+    <h1>Welcome to our website!</h1>
+
+    <h2>Featured Products:</h2>
+    <ul>
+        <% for (let i = 0; i < products.length; i++) { %>
+            <li><%= products[i].name %> - $<%= products[i].price %></li>
+        <% } %>
+    </ul>
+
+    <% if (loggedIn) { %>
+        <p>Welcome, <%= username %>! You are logged in.</p>
+    <% } else { %>
+        <p>Please log in to access special offers.</p>
+    <% } %>
+</body>
+</html>

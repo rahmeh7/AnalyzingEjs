@@ -1,0 +1,15 @@
+{
+  "name": "exercise-1-variables",
+  "version": "1.0.0",
+  "description": "This is the exercise 1: Variables. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rahul Mehta",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  }
+}
